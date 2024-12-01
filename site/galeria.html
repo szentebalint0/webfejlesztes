@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Szente Bálint">
+    <meta name="description" content="Képgaléria Stewieról">
+    <meta name="copyright" content="Tanulási célra">
+    <link rel="shortcut icon" href="../pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css">
+    <title>Stewie a franciabulldog</title>
+    <style>
+        .slider {
+            width: 80%;
+            min-width: 400px;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 5px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: rgb(9, 126, 25);
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+        .slider img{
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="up"></a>
+        <div class="cim">
+            <img src="../pics/stewicon.png" alt="ikon Stewieról" class="stewicon">
+            <h1>Galéria</h1>
+        </div>
+        <img src="../pics/hamburger.png" alt="hamburger menü" id="hamb">
+    </header>
+    <div class="container">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Bemutatkozás</a></li>
+                <li><a href="index.html#szakter">Szakterületek</a></li>
+                <li><a href="webshop.html">Termékeink</a></li>
+                <li><a class="active" href="#">Galéria</a></li>
+            </ul>
+        </nav>
+        <section class="center slider">
+            <div><img src="../gallery/stewie5.jpg" alt="Stewie az erdőben" title="Stewie az erdőben"></div>
+            <div><img src="../gallery/stewie1.jpg" alt="Stewie fekszik a fűben" title="Stewie fekszik a fűben"></div>
+            <div><img src="../gallery/stewie2.jpg" alt="Stewie oldalán fekszik az ágyban" title="Stewie oldalán fekszik az ágyban"></div>
+            <div><img src="../gallery/stewie3.jpg" alt="Stewie a tengerparton van" title="Stewie a tengerparton van"></div>
+            <div><img src="../gallery/stewie4.jpg" alt="Stewie alszik betakarva" title="Stewie alszik betakarva"></div>
+            <div><img src="../gallery/stewie6.jpg" alt="Stewie egy fotelben ül" title="Stewie egy fotelben ül"></div>
+            <div><img src="../gallery/stewie7.jpg" alt="Stewie fekszik a kanapén" title="Stewie fekszik a kanapén"></div>
+            <div><img src="../gallery/stewie8.jpg" alt="Stewie a tengerparton van" title="Stewie a tengerparton van"></div>
+            <div><img src="../gallery/stewie9.jpg" alt="Stewie fejjel lefele fekszik" title="Stewie fejjel lefele fekszik"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="nev">©2024 Szente Bálint</p>
+        <a href="#up"><img src="../pics/arrowup.png" alt="ugrás az oldal tetejére"></a>
+        <p class="info">Oktatási célból létrehozva</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../jquery/jquery-3.7.1.js"></script>
+    <script src="../slick-1.8.1/slick/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '30px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerPadding: '50px',
+                            slidesToShow: 1,
+                            
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '20px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

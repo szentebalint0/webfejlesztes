@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Szente Bálint">
+    <meta name="description" content="Kérdőív a fogyasztói szokásokról">
+    <meta name="copyright" content="Tanulási célra">
+    <link rel="shortcut icon" href="../pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Stewie a franciabulldog</title>
+</head>
+
+<body onload="kerdoiv()">
+    <header>
+        <a id="up"></a>
+        <div class="cim">
+            <img src="../pics/stewicon.png" alt="ikon Stewieról" class="stewicon">
+            <h1>stewie a franciabulldog</h1>
+        </div>
+        <img src="../pics/hamburger.png" alt="hamburger menü" id="hamb">
+    </header>
+    <div class="container">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Bemutatkozás</a></li>
+                <li><a href="index.html#szakter">Szakterületek</a></li>
+                <li><a href="webshop.html">Termékeink</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+            </ul>
+        </nav>
+        <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform">
+
+            <div class="col1">
+                <p>
+                    <label for="vnev">A vezetéknevem:</label>
+                    <input type="text" name="vezet" id="vnev"><br>
+                    <label for="knev">A keresztnevem:</label>
+                    <input type="text" name="kereszt" id="knev">
+                </p>
+                <p>
+                    <label for="kor">Korom</label>
+                    <input type="text" id="kor" name="korcsop">
+                </p>
+                <p>
+                    <label for="vankutyam">Van kutyám</label>
+                    <input type="radio" name="vankutya" value="igen" id="vankutyam"><br>
+                    <label for="nincskutyam">Nincs kutyám</label>
+                    <input type="radio" name="vankutya" value="nem" id="nincskutyam" checked><br>
+                </p>
+                <p>
+                    <label for="fajta">Milyen fajta kutyád van?</label>
+                    <input type="text" id="fajta" name="kutyafajta" list="dogtype" size="27" disabled><br>
+                    <datalist id="dogtype">
+                        <option value="Akita">
+                        <option value="Alaszkai malamut">
+                        <option value="Amerikai bulldog">
+                        <option value="Amerikai cocker spániel">
+                        <option value="Amerikai pitbull terrier">
+                        <option value="Angol bulldog">
+                        <option value="Angol cocker spániel">
+                        <option value="Angol masztiff">
+                        <option value="Angol véreb">
+                        <option value="Ausztrál juhászkutya">
+                        <option value="Ausztrál terrier">
+                        <option value="Basenji">
+                        <option value="Basset hound">
+                        <option value="Beagle">
+                        <option value="Bearded collie">
+                        <option value="Belga juhászkutya">
+                        <option value="Berni pásztorkutya">
+                        <option value="Bichon frisé">
+                        <option value="Border collie">
+                        <option value="Bordeaux-i dog">
+                        <option value="Boston terrier">
+                        <option value="Boxer">
+                        <option value="Briard">
+                        <option value="Bull terrier">
+                        <option value="Bullmasztiff">
+                        <option value="Cane corso">
+                        <option value="Chihuahua">
+                        <option value="Csau-csau">
+                        <option value="Csehszlovák farkaskutya">
+                        <option value="Dalmata">
+                        <option value="Dobermann">
+                        <option value="Drótszőrű foxterrier">
+                        <option value="Erdélyi kopó">
+                        <option value="Fehér svájci juhászkutya">
+                        <option value="Francia bulldog">
+                        <option value="Golden retriever">
+                        <option value="Gordon szetter">
+                        <option value="Havanese">
+                        <option value="Husky">
+                        <option value="Ír farkaskutya">
+                        <option value="Ír szetter">
+                        <option value="Jack Russell terrier">
+                        <option value="Japán spániel">
+                        <option value="Kangal">
+                        <option value="Keeshond">
+                        <option value="Komondor">
+                        <option value="Kuvasz">
+                        <option value="Labrador retriever">
+                        <option value="Leonbergi">
+                        <option value="Lhasa apso">
+                        <option value="Máltai selyemkutya">
+                        <option value="Mopsz">
+                        <option value="Német dog">
+                        <option value="Német juhászkutya">
+                        <option value="Német spitz">
+                        <option value="Olasz agár">
+                        <option value="Papillon">
+                        <option value="Pekingi palotakutya">
+                        <option value="Pincs">
+                        <option value="Pitbull">
+                        <option value="Pomerániai törpespitz">
+                        <option value="Portugál vízikutya">
+                        <option value="Puli">
+                        <option value="Pumi">
+                        <option value="Rhodesiai ridgeback">
+                        <option value="Rottweiler">
+                        <option value="Saarloos farkaskutya">
+                        <option value="Saint Bernard">
+                        <option value="Shar pei">
+                        <option value="Shiba inu">
+                        <option value="Shih tzu">
+                        <option value="Shetlandi juhászkutya">
+                        <option value="Skót terrier">
+                        <option value="Szibériai husky">
+                        <option value="Szlovák csuvasz">
+                        <option value="Tacskó">
+                        <option value="Tibeti masztiff">
+                        <option value="Tibeti terrier">
+                        <option value="Uszkár">
+                        <option value="Vadászkopó">
+                        <option value="Vizsla">
+                        <option value="Weimari vizsla">
+                        <option value="West Highland White terrier">
+                        <option value="Whippet">
+                        <option value="Yorkshire terrier">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="hanyora">Naponta hány órát játszol a kutyáddal?</label>
+                    <input type="text" id="hanyora" name="napihany" disabled><br>
+                    <span id="message"></span><br>
+                </p>
+                <label for="kolt">Évente kb. mennyi pénzt költesz kutyádra? (játékok, orvos, stb.)<br></label>
+                <p id="penz">
+                    <select name="koltseg" size="1" id="kolt">
+                        <option value="0-25">0-25.000Ft.</option>
+                        <option value="25-50">25.000-50.000Ft.</option>
+                        <option value="50-100">50.000-100.000Ft.</option>
+                        <option value="100plusz">100.000Ft. felett</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mennyi">Mennyire szereted a franciabulldogokat?</label>
+                    <input type="range" name="mennyire" id="mennyi">
+                    <span id="csuszkaertek"></span>
+                </p>
+            </div>
+            <div class="col2">
+                Az alábbiak közül milyen kiegészítőid vannak?<br>
+                <p>
+                    <label for="nyakorv">Nyakörv</label>
+                    <input type="checkbox" name="nyakorv" value="ON" id="nyakorv">
+                </p>
+                <p>
+                    <label for="poraz">Póráz</label>
+                    <input type="checkbox" name="poraz" value="ON" id="poraz">
+                </p>
+                <p>
+                    <label for="kutyakabat">Kutyakabát</label>
+                    <input type="checkbox" name="kutyakabat" value="ON" id="kutyakabat">
+                </p>
+                <p>
+                    <label for="kutyatorcsi">Kutyatörölköző</label>
+                    <input type="checkbox" name="kutyatorcsi" value="ON" id="kutyatorcsi">
+                </p>
+                <p>
+                    <label for="kutyasampon">Kutyasampon</label>
+                    <input type="checkbox" name="kutyasampon" value="ON" id="kutyasampon">
+                </p>
+                <p>
+                    <label for="szorkefe">Szőrkefe</label>
+                    <input type="checkbox" name="szorkefe" value="ON" id="szorkefe">
+                </p>
+                <p>
+                    <label for="kutyatal">Kutyatál</label>
+                    <input type="checkbox" name="kutyatal" value="ON" id="kutyatal">
+                </p>
+                <p>
+                    <label for="hirlevelnem">Nem szeretnék hírlevelet kapni</label>
+                    <input type="radio" name="hirlevel" value="nem" id="hirlevelnem" checked><br>
+                    <label for="hirleveligen">Szeretnék hírlvelet kapni</label>
+                    <input type="radio" name="hirlevel" value="igen" id="hirleveligen">
+                    <input type="text" id="em" name="email" placeholder="Ide írd az email címed" disabled>
+                </p>
+            </div>
+            <div class="myButton">
+                <input type="submit" value="Elküldés">
+                <input type="reset" value="Újrakezdés">
+            </div>
+
+        </form>
+    </div>
+    <footer>
+        <p class="nev">©2024 Szente Bálint</p>
+        <a href="#up"><img src="../pics/arrowup.png" alt="ugrás az oldal tetejére"></a>
+        <p class="info">Oktatási célból létrehozva</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../jquery/jquery-3.7.1.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    vezet: "required",
+                    kereszt: "required",
+                    korcsop: {
+                        required: true,
+                        digits: true,
+                    },
+                    kutyafajta: "required",
+                    napihany: {
+                        required: true,
+                        digits: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                },
+
+                messages: {
+                    vezet: "Írd be a vezetékneved!",
+                    kereszt: "Írd be a keresztneved!",
+                    korcsop: {
+                        required: "Ez a mező kötelező.",
+                        digits: "Csak számokat adj meg!",
+                    },
+                    kutyafajta: "Írd be a fajtát",
+                    napihany: {
+                        required: "Ez a mező kötelező.",
+                        digits: "Csak számokat adj meg!",
+                    },
+                    email: {
+                        required: "Ez a mező kötelező.",
+                        email: "Kérlek létező emailt adj meg!"
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
