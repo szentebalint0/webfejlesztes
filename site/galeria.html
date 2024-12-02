@@ -29,7 +29,7 @@
 
         .slick-prev:before,
         .slick-next:before {
-            color: rgb(9, 126, 25);
+            color: rgb(197, 197, 197);
         }
 
         .slick-slide {
@@ -46,6 +46,7 @@
         }
         .slider img{
             height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -100,11 +101,12 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: false,
+                speed: 1000,
                 responsive: [
                     {
                         breakpoint: 768,
                         settings: {
-                            arrows: true,
+                            arrows: false,
                             centerPadding: '50px',
                             slidesToShow: 1,
                             
@@ -115,7 +117,8 @@
                         settings: {
                             arrows: false,
                             centerPadding: '20px',
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            dots: false,
                         }
                     }
                 ]
