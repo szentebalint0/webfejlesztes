@@ -12,7 +12,7 @@
     <title>Stewie a franciabulldog</title>
 </head>
 
-<body onload="kerdoiv()">
+<body>
     <header>
         <a id="up"></a>
         <div class="cim">
@@ -30,7 +30,7 @@
                 <li><a href="galeria.html">Galéria</a></li>
             </ul>
         </nav>
-        <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform">
+        <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="myform" novalidate>
 
             <div class="col1">
                 <p>
@@ -195,7 +195,7 @@
                     <input type="radio" name="hirlevel" value="nem" id="hirlevelnem" checked><br>
                     <label for="hirleveligen">Szeretnék hírlvelet kapni</label>
                     <input type="radio" name="hirlevel" value="igen" id="hirleveligen">
-                    <input type="text" id="em" name="email" placeholder="Ide írd az email címed" disabled>
+                    <input type="email" id="em" name="email" placeholder="Ide írd az email címed" disabled>
                 </p>
             </div>
             <div class="myButton">
@@ -210,7 +210,8 @@
         <a href="#up"><img src="../pics/arrowup.png" alt="ugrás az oldal tetejére"></a>
         <p class="info">Oktatási célból létrehozva</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="form.js"></script>
     <script src="../jquery/jquery-3.7.1.js"></script>
     <script src="../validation/dist/jquery.validate.min.js"></script>
     <script>
