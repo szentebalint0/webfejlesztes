@@ -1,5 +1,5 @@
 # webfejlesztes
-Beadandó weboldal
+## Beadandó weboldal
 
 A weblap készítője: Szente Bálint
 
@@ -8,7 +8,7 @@ A weblap URL címe: https://szentebalint0.github.io/webfejlesztes/site/index.htm
 Rövid leírás: A weboldal összeségében a családi kutyáról, Stewieról szól, található egy kezdetleges webshop, egy fotógaléria a kutyáról 
 továbba egy kitalált piackutatási kérdőív található meg az oldalon (az a 4. site, főoldalról érhető el)
 
-Források:
+## Források:
 
 JavaScript kódok:
 -Minden siteon megtalálható hamburger menu, mely egy sima display:none és block-ot váltogat
